@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CurtaMais</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+		<div class="navbar-brand"><a href="/">Curta + Gastronomia!</a></div>
+	</div>
+	<div>
+		<form class="navbar-form navbar-right search-thing" role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Pesquisar">
+			</div>
+			<button type="submit" class="btn btn-default">Pesquisar</button>
+		</form>
+	</div>
+</nav>
+		<div class="col-md-12 col-sm-12">
+			<%= yield %>
+		</div>
+	</div>	
+</body>
+</html>

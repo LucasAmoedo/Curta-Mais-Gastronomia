@@ -1,0 +1,33 @@
+<div class= "row">
+	<div class="col-md-10 col-sm-10" align="left">
+		<h1><%= @restaurant.name %></h1>
+	</div>
+	<div class="col-md-2 col-sm-2" align="right">
+		<%= link_to "Voltar", restaurants_path %>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-4 col-sm-4">
+		<%= image_tag @restaurant.avatar.url(:medium), size: "300x300"%>		
+	</div>
+	<div class="col-md-2 col-sm-2">
+		<p>
+  		<strong>Horário de Funcionamento:</strong>
+  		<%= @restaurant.hours %>
+		</p>
+		<p>
+		  <strong>Endereço:</strong>
+		  <%= @restaurant.location %>
+		</p>
+		<p>
+			<strong>Telefone:</strong>
+			<%= @restaurant.phone %>
+		</p>
+	</div>
+	<div class="col-md-6 col-sm-6">
+		<p>
+  		<%= @restaurant.description %>
+		</p>
+	</div>
+</div>
