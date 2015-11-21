@@ -1,8 +1,8 @@
-<div class="row">
-  <div class="col-md-10 col-sm-10">
-    <h1>Restaurantes</h1>
+<!--<div class="row">
+  <div class="col-md-6 col-sm-6">
+    <img src="<%= image_path "restaurantes.jpg"%>" alt="Restaurantes" id="identifier" width = "585" height = "100" >
   </div>
-  <div class="col-md-2 col-sm-2" align="right">
+  <div class="col-md-6 col-sm-6" align="right">
     <%= link_to "Voltar", root_path %>
   </div>
 </div>
@@ -23,3 +23,24 @@
   <% end %>
 </div>
 
+-->
+<body>
+  <div class="row">
+  <div class="col-md-12 col-sm-12" align="right">
+    <%= link_to "Voltar", root_path %>
+  </div>
+</div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <% @restaurants.each do |restaurant| %>
+        <div class="col-md-4">
+          <%= image_tag restaurant.avatar.url, size: "250x250", :class=> "images-things"%>
+          <h1><%= link_to restaurant.name, restaurant%></h1>
+          <p><%= restaurant.description %></p>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>

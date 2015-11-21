@@ -15,10 +15,18 @@
  @import "bootstrap";
 
 #label {
-    font-size: 45px;
-    margin-top: -120px;
-    margin-left: -50px;
     color: white;
     text-shadow: black 2px 2px 2px;
-    text-align: center;
+}
+
+#identifier{
+	color:black;
+}
+
+.cover {
+	min-height: 50% !important;
+}
+
+.images-things{
+	border: 1px solid;
 }
