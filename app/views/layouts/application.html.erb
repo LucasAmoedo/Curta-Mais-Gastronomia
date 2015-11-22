@@ -14,9 +14,10 @@
   <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
   rel="stylesheet" type="text/css">
 </head>
-<body>
-	<body>
-     <div class="navbar navbar-default">
+	<body style="
+    background-color: #FFD489;
+">
+     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
@@ -30,38 +31,36 @@
           <div class="collapse navbar-collapse" id="navbar-ex-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="active">
-                <a href="/">Home</a>
+                <a href="/">Categorias</a>
               </li>
               <li>
-                <a href="#">Contatos</a>
+                <a href="/restaurants">Restaurantes</a>
+              </li>
+              <li>
+                <a href="/recipes">Receitas</a>
+              </li>
+              <li>
+                <a href="/events">Eventos</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     <%= yield %>
-    <footer class="section section-primary">
+    <footer class="section section-warning">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <h1>Footer header</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
+            <h1>Sobre o site</h1>
+            <p>Site desenvolvido pelos alunos da disciplina de IHC da,
+              <br>Universidade de Brasília, para buscas de conteúdos
+              <br>relacionados a categoria "Gastronomia" do site <a href="http://www.curtamais.com.br/">Curta mais</a></p>
           </div>
           <div class="col-sm-6">
             <p class="text-info text-right">
               <br>
               <br>
             </p>
-            <div class="row">
-              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
-                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
-              </div>
-            </div>
             <div class="row">
               <div class="col-md-12 hidden-xs text-right">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
