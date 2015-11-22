@@ -1,15 +1,29 @@
-<div class= "row">
+<div class= "row" style="
+    margin-top: 58px;
+    margin-left: 15px;
+">
 	<div class="col-md-10 col-sm-10" align="left">
 		<h1><%= @restaurant.name %></h1>
 	</div>
 	<div class="col-md-2 col-sm-2" align="right">
-		<%= link_to "Voltar", restaurants_path %>
+		<a href="/restaurants">
+			<button type="button" class="btn btn-warning"style="
+					width: 100px;
+					height: 50px;
+					margin-top: -10px;
+					margin-right: 20px;
+					">
+					Voltar</button>
+		</a>
 	</div>
 </div>
 <br>
-<div class="row">
+<div class="row" style="
+    margin-left: 0px;
+    margin-bottom: 15px;
+">
 	<div class="col-md-4 col-sm-4">
-		<%= image_tag @restaurant.avatar.url(:medium), size: "300x300"%>		
+		<%= image_tag @restaurant.avatar.url(:medium), size: "300x300"%>
 	</div>
 	<div class="col-md-2 col-sm-2">
 		<p>
